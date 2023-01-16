@@ -1,0 +1,246 @@
+/* Monte sua estilização aqui */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;500;700&family=Nunito:ital,wght@1,900&display=swap');
+:root {
+    --color-base-1: #000000;
+    --color-base-2: #4C6EF5;
+    --color-base-3: #343A40;
+    --color-base-4: #ADB5BD;
+    --color-base-5: #DEE2E6;
+    --color-base-6: #FFFFFF;
+    
+    --color-base-red: #ff2229;
+    --color-base-yelow: #ffbf1c;
+}
+html {
+    max-width: 100vw;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 100%;
+    
+    background-color: var(--color-base-1);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    
+    
+}
+.poke__top {
+
+    width: 100vw;
+    height: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.top__logo {
+    padding: 1rem;
+
+}
+.top__logo > img {
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.poke__search {
+    
+    display: flex;
+        
+    position:absolute;
+    width: 550px;
+    height: 120px;
+
+    max-width: 80%;
+        
+}
+.btn__search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    
+    padding: 30px 14px;
+    border-radius: 8px;
+    gap: 10px;
+
+    position: absolute;  
+    width: 72px;
+    height: 52px;
+    left: 188px;
+    top: 120px;
+
+    margin-left: 1rem;
+    background-color: var(--color-base-2);
+    
+    max-width: 90%;
+}
+
+.input__search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 12px;
+    gap: 10px;
+
+    position: absolute;
+    width: 166px;
+    height: 52px;
+    left: 0px;
+    top: 120px;
+    
+    border: none;
+    background-color: var(--color-base-3);
+    border-radius: 8px;
+}
+
+/*corpo*/
+.box__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.pokemon__top--h2 {
+    color: var(--color-base-5);
+    padding: 3rem;
+
+    font-size: 20px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+
+
+
+}
+.loading {
+    position: absolute;
+    
+    width: 124px;
+    height: 26px;
+    left: 98px;
+    top: 371px;
+
+}
+.loading > h2 {
+    color: var(--color-base-4);
+}
+
+.poke__result {
+
+    width: 90vw;
+    height: 300px;
+    left: 20px;
+    
+}
+.poke__list {
+    padding: 1rem;
+}
+
+.pokemon__img {
+    width: 200px;
+    height: 200px;
+}
+
+.poke__item {
+    color: var(--color-base-5);
+    background-color: var(--color-base-3);
+    border-radius: 8px;
+    
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+.poke__img {
+    width: 50px;
+    height: 50px;
+    
+}
+.pokemon__name {
+    padding: 40px;
+    margin-bottom: 90px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
+    font-weight:400;
+    
+    
+}
+.box__pokemon {
+    background-color: var(--color-base-1);
+    display: flex;
+}
+.box__descrition > h2 {
+    color: var(--color-base-5);
+    font-size: 18px;
+    padding: 3rem;
+}
+.loading {
+    visibility: visible;
+}
+@media (min-width: 428px) {
+    .poke__top {
+        
+        width: 100vw;
+        height: 30vh;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        
+    }
+    .top__logo {
+        
+
+        
+    }
+    .top__logo {
+        
+        position:absolute;
+        top: 22vh;
+        left: 18vw;
+        
+    }
+
+    .poke__search {
+        display: flex;
+        justify-content:flex-end;
+
+        width: 80vw;
+        
+    }
+    .input__search {
+       
+        position: absolute;
+        right: 1%;
+        left: auto; 
+        
+    }
+    .btn__search {
+
+        position:absolute;
+        left: auto;
+        right: auto;
+        
+    }
+}
+@media (min-width: 1024px) {
+    .pokemon__name {
+        font-size: 22px;
+    }
+}

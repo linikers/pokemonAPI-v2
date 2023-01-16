@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+
+    <!--Scripts-->
+    
+    <script type = "module" src = "./src/scripts/requests.js" defer></script>
+    
+    
+    <title>Consumindo PokeAPI</title>
+  </head>
+  <main>
+    <!--
+    
+    -->
+    <header class = "poke__top">
+      
+      <figure class = "top__logo">
+        <a href="./index.html">
+          <img src="./src/assets/pokeapi.png" alt="pokeLogo">
+        </a>
+        
+      </figure>
+
+      <div class = "poke__search">
+        <form>
+          <input type="text" placeholder="Buscar" id="#input__busca" class="input__search">
+        <button class="btn__search" id="busca"><img src="./src/assets/search-icon.png" alt="search"></button>
+      
+        </form>
+        </div>
+      
+    </header>
+
+    <div class="box__title">
+      <h2 class="pokemon__top--h2">Lista de Pokémon</h2>
+
+    </div>
+    
+    <section class="loading" id="loading">
+      <h2>Carregando...</h2>
+    </section>
+
+    
+    <section class="poke__result">
+      <ul class="poke__list">
+        
+      </ul>
+    </section>
+
+    
+  </main>
+  <body></body>
+</html>
